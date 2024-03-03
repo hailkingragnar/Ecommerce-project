@@ -1,0 +1,40 @@
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    }
+    
+    body{
+        background:lightblue;
+        display: flex;
+        justify-content: center;
+    }
+h1{
+    font-size: 25px;
+}
+
+.admin-panel{
+    text-align: center;
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    border: 1px solid;
+    align-content: center;
+    margin-top: 250px;
+    background-color:lightgreen;
+
+
+}
+a{
+    text-decoration: none;
+}
+.button{
+    justify-content: center;
+    
+}
+.button li
+{
+    list-style: none;
+    margin-bottom: 20px;
+    padding-right: 20px;
+
+}

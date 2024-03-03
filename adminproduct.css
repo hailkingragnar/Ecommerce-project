@@ -1,0 +1,48 @@
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    }
+    
+    body{
+        background:lightblue;
+        display: flex;
+        justify-content: center;
+    }
+html{
+font-size: 62.5%;
+overflow-x: hidden;
+}
+
+body{
+    background: peru;
+    display: flex;
+    justify-content: center;
+    text-transform: capitalize;
+}
+h1{
+    font-size: 25px;
+}
+.product-detail{
+    text-align: center;
+    width: 400px;
+    height: 170px;
+    border-radius: 20px;
+    border: 1px solid;
+    align-content: center;
+    margin-top: 250px;
+    background-color: blueviolet;
+
+
+}
+a{
+    text-decoration: none;
+}
+
+.details
+{
+    display: block;
+    margin-bottom: 10px;
+    
+    justify-content: center;
+    text-align: center;
+}

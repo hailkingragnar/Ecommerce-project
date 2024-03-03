@@ -1,0 +1,30 @@
+.user-profile {
+    position: relative;
+}
+
+.profile-name {
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.profile-options {
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 0;
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.profile-option {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 5px 10px;
+}
+
+.user-profile:hover .profile-options {
+    display: block;
+}

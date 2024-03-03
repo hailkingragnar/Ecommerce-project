@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="product-grid">
+    <% 
+        Session s = FactoryProvider.getFactory().openSession();
+        Query<Product> query = s.createQuery("FROM Product", Product.class);
+        List<Product> productList = query.getResultList();
+        for(Product product : productList){
+    %>
+    <div class="product-card">
+        <img src="<%= productImage %>" alt="<%= productName %>" class="product-image">
+        <div class="product-info">
+            <h3 class="product-name"><%= productName %></h3>
+            <p class="product-description"><%= productDescription %></p>
+            <span class="product-price">$<%= productPrice %></span>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+    <%
+        }
+    %>
+</div>
+   
+</body>
+</html>
